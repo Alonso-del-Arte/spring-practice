@@ -3,11 +3,20 @@ package com.genspark.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Student {
 
     private int id;
+
     private String name;
+
+    @Autowired
     private List<Phone> phones;
+
+    @Autowired
     private Address address;
 
     public int getId() {
