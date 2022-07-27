@@ -29,7 +29,8 @@ In MySQL, I created a table thus:
 
 ``` SQL
  CREATE TABLE students (
-       id              INT unsigned NOT NULL AUTO_INCREMENT, 
+       id              INT unsigned NOT NULL 
+                           AUTO_INCREMENT, 
        name            VARCHAR(150) NOT NULL,                
        phoneA          VARCHAR(40) NOT NULL,
        phoneB          VARCHAR(40),
