@@ -11,10 +11,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class MockStudentServiceTest {
 
-    // TODO: Write test getAllStudents() does not leak reference
     @Test
     void testGetAllStudentsDoesNotLeakReference() {
-        fail();
+        StudentService mock = new MockStudentService();
+        List<Student> firstList = mock.getAllStudents();
+        firstList.add(new Student());
+        List<Student> secondList = mock.getAllStudents();
+        assertNotEquals(firstList, secondList);
     }
 
 }

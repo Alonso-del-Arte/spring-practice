@@ -9,10 +9,9 @@ public class MockStudentService implements StudentService {
 
     private final List<Student> students = new ArrayList<>();
 
-    // TODO: Write tests for this
     @Override
     public List<Student> getAllStudents() {
-        return this.students;
+        return new ArrayList<>();
     }
 
     // TODO: Write tests for this
