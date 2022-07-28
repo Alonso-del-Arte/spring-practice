@@ -1,6 +1,6 @@
-package com.genspark.view;
+package com.genspark.service;
 
-import com.genspark.model.Student;
+import com.genspark.entity.Student;
 
 import java.util.List;
 

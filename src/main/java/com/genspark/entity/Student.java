@@ -1,4 +1,4 @@
-package com.genspark.model;
+package com.genspark.entity;
 
 import java.util.ArrayList;
 import java.util.List;

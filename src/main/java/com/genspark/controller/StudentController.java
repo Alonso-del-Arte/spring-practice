@@ -1,7 +1,7 @@
 package com.genspark.controller;
 
-import com.genspark.model.Student;
-import com.genspark.view.StudentService;
+import com.genspark.entity.Student;
+import com.genspark.service.StudentService;
 
 import java.util.List;
 

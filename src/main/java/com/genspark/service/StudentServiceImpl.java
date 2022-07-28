@@ -1,6 +1,7 @@
-package com.genspark.view;
+package com.genspark.service;
 
-import com.genspark.model.Student;
+import com.genspark.dao.StudentDAO;
+import com.genspark.entity.Student;
 
 import java.util.List;
 import java.util.Optional;

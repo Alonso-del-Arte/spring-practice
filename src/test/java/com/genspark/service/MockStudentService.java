@@ -1,6 +1,6 @@
-package com.genspark.view;
+package com.genspark.service;
 
-import com.genspark.model.Student;
+import com.genspark.entity.Student;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class MockStudentService implements StudentService {
 
     @Override
     public List<Student> getAllStudents() {
-        return new ArrayList<>();
+        return new ArrayList<>(this.students);
     }
 
     // TODO: Write tests for this
@@ -23,7 +23,8 @@ public class MockStudentService implements StudentService {
     // TODO: Write tests for this
     @Override
     public Student addStudent(Student student) {
-        return null;
+        this.students.add(student);
+        return student;
     }
 
     // TODO: Write tests for this

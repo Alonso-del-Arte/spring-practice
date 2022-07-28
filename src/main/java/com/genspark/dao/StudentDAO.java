@@ -1,6 +1,6 @@
-package com.genspark.view;
+package com.genspark.dao;
 
-import com.genspark.model.Student;
+import com.genspark.entity.Student;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
