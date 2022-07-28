@@ -33,6 +33,7 @@ public class StudentService {
 
     // TODO: Write tests for this
     public boolean deleteStudentById(int id) {
+        Optional<Student> option = this.studentDAO.findById(id);
         return true;
     }
 
